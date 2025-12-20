@@ -1,8 +1,4 @@
-// ============================================
-// SERVICE WORKER - PWA
-// ============================================
-
-const CACHE_NAME = 'cartas-kelly-v1.0.2';
+const CACHE_NAME = 'cartas-kelly-v1.0.3';
 const CACHE_ASSETS = [
     './',
     './index.html',
@@ -13,12 +9,10 @@ const CACHE_ASSETS = [
     './js/cartas-data.js',
     './js/pwa.js',
     './manifest.json',
-    './icons/icon.svg'
+    './icons/icon.svg',
+    './icons/kaisei-y-yo.ico'
 ];
 
-// ============================================
-// INSTALACIÓN DEL SERVICE WORKER
-// ============================================
 self.addEventListener('install', event => {
     console.log('Service Worker: Instalando...');
     
@@ -38,9 +32,6 @@ self.addEventListener('install', event => {
     );
 });
 
-// ============================================
-// ACTIVACIÓN DEL SERVICE WORKER
-// ============================================
 self.addEventListener('activate', event => {
     console.log('Service Worker: Activando...');
     
@@ -156,9 +147,6 @@ self.addEventListener('push', event => {
     );
 });
 
-// ============================================
-// CLICK EN NOTIFICACIÓN
-// ============================================
 self.addEventListener('notificationclick', event => {
     console.log('Notificación clickeada');
     
@@ -169,9 +157,6 @@ self.addEventListener('notificationclick', event => {
     );
 });
 
-// ============================================
-// MENSAJES DESDE LA PÁGINA
-// ============================================
 self.addEventListener('message', event => {
     console.log('Service Worker: Mensaje recibido', event.data);
     

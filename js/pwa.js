@@ -157,7 +157,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 function mostrarBotonInstalacion() {
     // Puedes crear un botón personalizado para instalar la PWA
-    console.log('💾 PWA puede ser instalada');
+    console.log('PWA puede ser instalada');
     
     // Ejemplo de cómo implementar el botón:
     /*
@@ -183,7 +183,7 @@ window.addEventListener('appinstalled', () => {
 });
 
 if (window.matchMedia('(display-mode: standalone)').matches) {
-    console.log('📱 Ejecutando como PWA instalada');
+    console.log('Ejecutando como PWA instalada');
     // Aquí puedes agregar funcionalidad específica para cuando
     // la app se ejecuta como PWA instalada
 }
@@ -213,7 +213,7 @@ if ('sync' in navigator.serviceWorker) {
     navigator.serviceWorker.ready.then(registration => {
         return registration.sync.register('sync-cartas');
     }).then(() => {
-        console.log('🔄 Sincronización en segundo plano registrada');
+        console.log('Sincronización en segundo plano registrada');
     }).catch(err => {
         console.log('Error al registrar sincronización:', err);
     });

@@ -2,21 +2,21 @@ const cartasData = [
     {
         id: 1,
         nombre: "Mi Primera Carta Digital",
-        fecha: "2024-12-17",
+        fecha: "2025-12-18",
         diseño: "sobre",
         destinatario: "Kelly",
         contenido: `Querida Kelly,
 
-Esta es la primera carta que te escribo en este nuevo formato digital. Decidí crear este espacio especial porque las cartas en papel que te había escrito se perdieron, y no quiero que nuestros momentos se olviden.
+Esta es la primera carta que te escribo en este nuevo formato digital. Decidí crear este espacio especial porque las cartas en papel que te había escrito se perdieron (y también perdí las últimas que te hice), y no quiero que nuestros momentos se olviden.
 
 Este lugar será como un cofre de tesoros, donde guardaré cada pensamiento, cada sentimiento, cada momento que quiero compartir contigo.
 
 Espero que te guste tanto como a mí me gustó crearlo para ti.
 
 Con todo mi cariño,
-Tu amigo de siempre`
+Joseph.`
     },
-    {
+    /*{
         id: 2,
         nombre: "Carta de Cumpleaños",
         fecha: "2024-03-15",
@@ -144,7 +144,7 @@ Gracias por todos estos años de amistad.
 
 En la quietud de la noche,
 Tu amigo pensativo`
-    }
+    }*/
 ];
 
 function obtenerTodasLasCartas() {
@@ -156,7 +156,6 @@ function obtenerCartaPorId(id) {
 }
 
 function agregarNuevaCarta(carta) {
-    // Generar nuevo ID automáticamente
     const nuevoId = Math.max(...cartasData.map(c => c.id)) + 1;
     carta.id = nuevoId;
     cartasData.push(carta);
