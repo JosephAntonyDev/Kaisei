@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('./service-worker.js')
             .then(registration => {
                 console.log('Service Worker registrado exitosamente:', registration.scope);
                 
@@ -196,11 +196,11 @@ window.addEventListener('load', () => {
 function precargarRecursos() {
     // Lista de recursos para precargar
     const recursos = [
-        '/css/styles.css',
-        '/css/cartas.css',
-        '/css/animaciones.css',
-        '/js/cartas-data.js',
-        '/js/app.js'
+        './css/styles.css',
+        './css/cartas.css',
+        './css/animaciones.css',
+        './js/cartas-data.js',
+        './js/app.js'
     ];
     
     recursos.forEach(url => {

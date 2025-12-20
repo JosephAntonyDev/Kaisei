@@ -2,17 +2,18 @@
 // SERVICE WORKER - PWA
 // ============================================
 
-const CACHE_NAME = 'cartas-kelly-v1.0.1';
+const CACHE_NAME = 'cartas-kelly-v1.0.2';
 const CACHE_ASSETS = [
-    '/',
-    '/index.html',
-    '/css/styles.css',
-    '/css/cartas.css',
-    '/css/animaciones.css',
-    '/js/app.js',
-    '/js/cartas-data.js',
-    '/js/pwa.js',
-    '/manifest.json'
+    './',
+    './index.html',
+    './css/styles.css',
+    './css/cartas.css',
+    './css/animaciones.css',
+    './js/app.js',
+    './js/cartas-data.js',
+    './js/pwa.js',
+    './manifest.json',
+    './icons/icon.svg'
 ];
 
 // ============================================

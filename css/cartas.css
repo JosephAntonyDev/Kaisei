@@ -273,13 +273,44 @@
    RESPONSIVE CARTAS
    ============================================ */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .carta-abierta {
-        padding: 30px 25px;
-        font-size: 1.05em;
+        padding: 35px 28px;
+        font-size: 1.1em;
+        margin: 0 8px;
+        border-radius: 6px;
     }
     
     .carta-texto {
-        text-indent: 1.5em;
+        text-indent: 1.2em;
+        text-align: left;
+        line-height: 1.9;
+    }
+    
+    .carta-fecha {
+        margin-bottom: 25px;
+    }
+    
+    .carta-firma {
+        margin-top: 35px;
+        padding-top: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
     }
 }
+
+@media (max-width: 480px) {
+    .carta-abierta {
+        padding: 28px 22px;
+        font-size: 1.05em;
+        margin: 0 5px;
+    }
+    
+    .carta-texto {
+        text-indent: 0;
+        line-height: 1.85;
+    }
+    
+    .carta-firma {
+        font-size: 0.85em;
