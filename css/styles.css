@@ -1,0 +1,534 @@
+/* ============================================
+   CARTAS PARA KELLY - ESTILO TRADICIONAL
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', Georgia, serif;
+    background: #f5ebe0;
+    min-height: 100vh;
+    padding: 30px 20px;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(210, 180, 140, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(188, 143, 143, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 60% 80%, rgba(139, 119, 101, 0.08) 0%, transparent 45%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.header::before {
+    content: "✉";
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    font-weight: 500;
+    color: #5c4033;
+    margin-bottom: 15px;
+    letter-spacing: 0.02em;
+}
+
+.subtitle {
+    font-size: 1.15em;
+    color: #8b7355;
+    font-style: italic;
+    letter-spacing: 0.03em;
+}
+
+/* ============================================
+   CONTROLES
+   ============================================ */
+
+.controls {
+    background: #fffbf5;
+    border: 1px solid #d4c4b0;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(92, 64, 51, 0.06);
+}
+
+.search-box,
+.filter-box {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.search-box i,
+.filter-box i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0896d;
+    font-size: 0.9em;
+}
+
+.search-box input,
+.filter-box select {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #d4c4b0;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: 'Crimson Text', Georgia, serif;
+    background: #fff;
+    color: #5c4033;
+    transition: border-color 0.2s ease;
+}
+
+.search-box input:focus,
+.filter-box select:focus {
+    outline: none;
+    border-color: #a0896d;
+}
+
+.search-box input::placeholder {
+    color: #b8a690;
+}
+
+.filter-box select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%238b7355' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+}
+
+/* ============================================
+   CONTADOR
+   ============================================ */
+
+.counter {
+    margin-bottom: 25px;
+    color: #8b7355;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+/* ============================================
+   GRID DE SOBRES
+   ============================================ */
+
+.cartas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+/* ============================================
+   SOBRE (Envelope Card)
+   ============================================ */
+
+.carta-card {
+    position: relative;
+    cursor: pointer;
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+.carta-card .sobre-container {
+    position: relative;
+    width: 100%;
+    padding-top: 68%;
+    perspective: 1000px;
+}
+
+.carta-card .sobre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta-card:hover .sobre {
+    transform: translateY(-8px) rotate(-1deg);
+}
+
+/* Cuerpo del sobre */
+.sobre-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 
+        0 8px 25px rgba(92, 64, 51, 0.15),
+        0 3px 10px rgba(92, 64, 51, 0.1);
+    z-index: 2;
+}
+
+/* Borde interior del sobre */
+.sobre-inner-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    border-radius: 0 0 6px 6px;
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.05);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Solapa trasera del sobre (interior) */
+.sobre-flap-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    clip-path: polygon(0 45%, 50% 100%, 100% 45%, 100% 0, 0 0);
+    border-radius: 6px 6px 0 0;
+    z-index: 1;
+}
+
+/* Solapa frontal (triángulo que cierra el sobre) */
+.sobre-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    z-index: 4;
+    transition: transform 0.3s ease;
+}
+
+/* Líneas decorativas del sobre */
+.sobre-lines {
+    position: absolute;
+    bottom: 12%;
+    left: 12%;
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 3;
+}
+
+.sobre-line {
+    height: 2px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 1px;
+}
+
+.sobre-line:nth-child(1) { width: 90%; }
+.sobre-line:nth-child(2) { width: 75%; }
+.sobre-line:nth-child(3) { width: 60%; }
+
+/* Corazón del sobre - SVG para forma perfecta */
+.sobre-heart {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 40px;
+    z-index: 5;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.sobre-heart svg {
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-heart path {
+    transition: fill 0.2s ease;
+}
+
+.carta-card:hover .sobre-heart {
+    transform: translateX(-50%) scale(1.12);
+}
+
+/* Info del sobre */
+.sobre-info {
+    text-align: center;
+    margin-top: 18px;
+    padding: 0 10px;
+}
+
+.sobre-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05em;
+    font-weight: 500;
+    color: #5c4033;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.sobre-info p {
+    font-size: 0.88em;
+    color: #8b7355;
+    font-style: italic;
+}
+
+/* ============================================
+   ESTILOS DE SOBRES POR DISEÑO
+   ============================================ */
+
+/* Crema clásico (sobre) */
+.carta-card.sobre .sobre-body { background: #f5e6d3; }
+.carta-card.sobre .sobre-flap-back { background: #e8d5c0; }
+.carta-card.sobre .sobre-flap { background: linear-gradient(180deg, #f0dcc5 0%, #e5d0b8 100%); }
+
+/* Vintage (amarillo antiguo) */
+.carta-card.vintage .sobre-body { background: #f0e5a8; }
+.carta-card.vintage .sobre-flap-back { background: #e5d89a; }
+.carta-card.vintage .sobre-flap { background: linear-gradient(180deg, #efe49f 0%, #e0d38c 100%); }
+
+/* Moderno (azul suave) */
+.carta-card.moderno .sobre-body { background: #d4e5f7; }
+.carta-card.moderno .sobre-flap-back { background: #c0d8f0; }
+.carta-card.moderno .sobre-flap { background: linear-gradient(180deg, #cde1f5 0%, #b8d4ed 100%); }
+
+/* Elegante (lavanda) */
+.carta-card.elegante .sobre-body { background: #e8dff5; }
+.carta-card.elegante .sobre-flap-back { background: #ddd0ed; }
+.carta-card.elegante .sobre-flap { background: linear-gradient(180deg, #e4d8f2 0%, #d5c5e8 100%); }
+
+/* Celebración (rosa) */
+.carta-card.celebracion .sobre-body { background: #fce4e8; }
+.carta-card.celebracion .sobre-flap-back { background: #f5d4da; }
+.carta-card.celebracion .sobre-flap { background: linear-gradient(180deg, #fadde2 0%, #f2ccd3 100%); }
+
+/* Minimalista (gris elegante) */
+.carta-card.minimalista .sobre-body { background: #e8e8e8; }
+.carta-card.minimalista .sobre-flap-back { background: #dcdcdc; }
+.carta-card.minimalista .sobre-flap { background: linear-gradient(180deg, #e5e5e5 0%, #d5d5d5 100%); }
+
+/* Romántico (rosa intenso) */
+.carta-card.romantico .sobre-body { background: #f8d7e0; }
+.carta-card.romantico .sobre-flap-back { background: #f0c5d2; }
+.carta-card.romantico .sobre-flap { background: linear-gradient(180deg, #f5d0dc 0%, #ebbdcc 100%); }
+
+/* Antiguo (sepia) */
+.carta-card.antiguo .sobre-body { background: #e6d5c3; }
+.carta-card.antiguo .sobre-flap-back { background: #d9c4ae; }
+.carta-card.antiguo .sobre-flap { background: linear-gradient(180deg, #e0cfbb 0%, #d2bea8 100%); }
+
+/* ============================================
+   MODAL
+   ============================================ */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(45, 35, 28, 0.88);
+    backdrop-filter: blur(3px);
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 680px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.4s ease-out;
+}
+
+.modal-close {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 1001;
+    background: #fffbf5;
+    border: 1px solid #d4c4b0;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.3em;
+    color: #5c4033;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background: #5c4033;
+    color: #fffbf5;
+    border-color: #5c4033;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 20px;
+    color: #8b7355;
+    border-top: 1px solid #d4c4b0;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+.footer i {
+    color: #c9405a;
+}
+
+.offline-indicator {
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+
+/* ============================================
+   ESTADOS VACÍOS
+   ============================================ */
+
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: #a0896d;
+    grid-column: 1 / -1;
+}
+
+.empty-state i {
+    font-size: 3em;
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+
+.empty-state p {
+    font-size: 1.15em;
+    font-style: italic;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cartas-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 30px;
+    }
+    
+    .modal-close {
+        top: 15px;
+        right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+    
+    .header {
+        padding: 25px 10px;
+        margin-bottom: 30px;
+    }
+    
+    .header h1 {
+        font-size: 1.7em;
+    }
+    
+    .cartas-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

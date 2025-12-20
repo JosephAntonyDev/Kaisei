@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#f5ebe0"/>
+  <g transform="translate(256,256)">
+    <!-- Sobre -->
+    <rect x="-140" y="-60" width="280" height="160" rx="8" fill="#e8d5c0"/>
+    <polygon points="-140,-60 0,50 140,-60" fill="#f0dcc5"/>
+    <!-- Corazón -->
+    <path d="M0,-20 C-25,-45 -50,-45 -50,-20 C-50,5 0,40 0,40 C0,40 50,5 50,-20 C50,-45 25,-45 0,-20" fill="#dc5858"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "name": "Cartas para Kelly",
+  "short_name": "Cartas",
+  "description": "Un rincón para guardar nuestras palabras",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5ebe0",
+  "theme_color": "#5c4033",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es-ES",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "lifestyle",
+    "social"
+  ]
+}

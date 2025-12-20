@@ -1,0 +1,285 @@
+/* ============================================
+   DISEÑOS DE CARTAS ABIERTAS (MODAL)
+   ============================================ */
+
+.carta-abierta {
+    padding: 45px 50px;
+    border-radius: 4px;
+    font-family: 'Crimson Text', Georgia, serif;
+    line-height: 1.85;
+    font-size: 1.15em;
+    position: relative;
+}
+
+.carta-fecha {
+    text-align: right;
+    font-size: 0.85em;
+    opacity: 0.6;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.carta-texto {
+    white-space: pre-line;
+    margin-bottom: 35px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.carta-firma {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid currentColor;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.carta-firma i {
+    font-size: 1em;
+}
+
+/* ============================================
+   PAPEL BASE
+   ============================================ */
+
+.carta-papel {
+    background: #fdfbf7;
+    color: #3d3d3d;
+    box-shadow: 
+        0 1px 3px rgba(0,0,0,0.08),
+        0 8px 30px rgba(0,0,0,0.12);
+    border: 1px solid #e8e0d5;
+}
+
+/* ============================================
+   DISEÑO: SOBRE (Crema clásico)
+   ============================================ */
+
+.carta-sobre {
+    background: linear-gradient(180deg, #fdf8f0 0%, #f8f0e3 100%);
+    color: #4a4035;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(92, 64, 51, 0.08),
+        0 12px 40px rgba(92, 64, 51, 0.15);
+}
+
+.carta-sobre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #d4a574 0%, #c9967a 50%, #d4a574 100%);
+}
+
+/* ============================================
+   DISEÑO: VINTAGE
+   ============================================ */
+
+.carta-vintage {
+    background: linear-gradient(180deg, #fef9e7 0%, #f5ecd0 100%);
+    color: #5a4a2f;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(139, 119, 85, 0.1),
+        0 12px 40px rgba(139, 119, 85, 0.18);
+}
+
+.carta-vintage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #c9a55c 0%, #b8943f 50%, #c9a55c 100%);
+}
+
+.carta-vintage .carta-texto {
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* ============================================
+   DISEÑO: MODERNO
+   ============================================ */
+
+.carta-moderno {
+    background: linear-gradient(180deg, #f5f9fd 0%, #e8f1f8 100%);
+    color: #2c4156;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(55, 90, 127, 0.08),
+        0 12px 40px rgba(55, 90, 127, 0.15);
+}
+
+.carta-moderno::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6a9bc3 0%, #5588b5 50%, #6a9bc3 100%);
+}
+
+/* ============================================
+   DISEÑO: ELEGANTE
+   ============================================ */
+
+.carta-elegante {
+    background: linear-gradient(180deg, #f9f5fc 0%, #f0e8f5 100%);
+    color: #3d2f4a;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(100, 70, 120, 0.08),
+        0 12px 40px rgba(100, 70, 120, 0.15);
+}
+
+.carta-elegante::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #a080b8 0%, #8b6aa0 50%, #a080b8 100%);
+}
+
+/* ============================================
+   DISEÑO: CELEBRACIÓN
+   ============================================ */
+
+.carta-celebracion {
+    background: linear-gradient(180deg, #fef5f6 0%, #fce8eb 100%);
+    color: #5a2d38;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(180, 80, 100, 0.08),
+        0 12px 40px rgba(180, 80, 100, 0.15);
+    position: relative;
+}
+
+.carta-celebracion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #e07090 0%, #d45575 50%, #e07090 100%);
+}
+
+/* ============================================
+   DISEÑO: MINIMALISTA
+   ============================================ */
+
+.carta-minimalista {
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #e0e0e0;
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.04),
+        0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.carta-minimalista::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #555555;
+}
+
+.carta-minimalista .carta-texto {
+    text-indent: 0;
+    text-align: left;
+}
+
+/* ============================================
+   DISEÑO: ROMÁNTICO
+   ============================================ */
+
+.carta-romantico {
+    background: linear-gradient(180deg, #fdf5f8 0%, #fae8ef 100%);
+    color: #5a2840;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(180, 60, 100, 0.08),
+        0 12px 40px rgba(180, 60, 100, 0.15);
+}
+
+.carta-romantico::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #d86088 0%, #c94570 50%, #d86088 100%);
+}
+
+/* ============================================
+   DISEÑO: ANTIGUO (Papel envejecido)
+   ============================================ */
+
+.carta-antiguo {
+    background: linear-gradient(180deg, #f8f0e0 0%, #efe3cc 100%);
+    color: #4a4035;
+    border: none;
+    box-shadow: 
+        0 2px 4px rgba(100, 80, 60, 0.1),
+        0 12px 40px rgba(100, 80, 60, 0.18);
+    position: relative;
+}
+
+.carta-antiguo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #a08060 0%, #8b7050 50%, #a08060 100%);
+}
+
+/* Efecto de líneas de papel */
+.carta-antiguo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 27px,
+        rgba(139, 119, 85, 0.06) 27px,
+        rgba(139, 119, 85, 0.06) 28px
+    );
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+/* ============================================
+   RESPONSIVE CARTAS
+   ============================================ */
+
+@media (max-width: 600px) {
+    .carta-abierta {
+        padding: 30px 25px;
+        font-size: 1.05em;
+    }
+    
+    .carta-texto {
+        text-indent: 1.5em;
+    }
+}
