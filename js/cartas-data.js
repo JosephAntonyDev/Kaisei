@@ -42,7 +42,7 @@ El amigo Joseph, como me decía tu mami.`
         nombre: "Las huellas imborrables de tu mami",
         fecha: "2025-12-23",
         diseño: "vintage",
-        destinatario: "Lizbeth",
+        destinatario: "Kelly",
         contenido: `Para Lizbeth, tu mami,
         
 Kelly, esta no es una carta de despedida para ella, sino una carta de agradecimiento eterno. Me he puesto a recordar todo lo que viví a su lado y necesito dejarlo escrito aquí para que nunca, jamás, se nos olvide la gran mujer que fue y cómo me adoptó en su corazón.
