@@ -37,6 +37,48 @@ No importa cuánto cambien nuestros caminos o cuánto tiempo pase, siempre guard
 Con todo mi cariño y apoyo incondicional,
 El amigo Joseph, como me decía tu mami.`
     },
+    {
+        id: 3,
+        nombre: "Las huellas imborrables de tu mami",
+        fecha: "2025-12-23",
+        diseño: "vintage",
+        destinatario: "Lizbeth",
+        contenido: `Para Lizbeth, tu mami,
+        
+Kelly, esta no es una carta de despedida para ella, sino una carta de agradecimiento eterno. Me he puesto a recordar todo lo que viví a su lado y necesito dejarlo escrito aquí para que nunca, jamás, se nos olvide la gran mujer que fue y cómo me adoptó en su corazón.
+
+La confianza que me regaló...
+¿Recuerdas esos tiempos en la prepa? Cuando no te dejaba salir facilmente, y aún así ella me abrío las puertas. Nunca olvidare la primera vez que le pedi permiso para salir contigo, ese día que me dio una hora para llegar por ti y para llegar a dejarte en casa, y llegue un poco tarde a tu casa y no me dijo nada por mi gran puntualidad, al contrario, nos dijo que nos fueramos con cuidado, y fuimos a la casa Rosa, en donde pedimos nuestras crepas y frappes y nos divertimos tanto.
+Esa confianza que me dio, no solo como amigo tuyo, sino como alguien en quien ella podía confiar. Me sentí honrado de ser parte de su círculo cercano, y esa confianza es un tesoro que guardo con mucho cariño. Y esa fue la primera vez, los lazos que ibamos a formar, estaba apenas comenzando...
+
+Sus palabras sobre nuestro futuro.
+Hay conversaciones que guardo con mucho cariño en mi memoria. Recuerdo vivamente aquella vez que me invitó ir al cine con ustedes, fue la primera vez que me invitaba a salir con ustedes, primero nos compró pizza, y durante ese trayecto en lo que llegaban las pizzas, nos dijo tanto a ti como a mí, sobre nuestro futuro, el estudio, nuestras metas, y sueños... nos aconsejó centrarnos en los estudios, mirándonos con esos ojos de esperanza, quizás imaginando un futuro donde yo seguía a tu lado, nos sugirió que nos enfocáramos, que nos cuidáramos, que aún somos jóvenes y que no desperdiciáramos nuestra juventud de ninguna forma.
+Esos consejos, esas palabras tan sabias, forman parte del motor que me impulsan a seguir adelanta en mi carrera y en mi vida. Siempre las llevaré conmigo, como un faro que me guía en los momentos de incertidumbre.
+
+La alegría de vernos juntos.
+Me hace sonreír recordar cómo celebraba nuestras locuras. Como aquella Navidad de la tradición del reno en el parque. Subí ese mini collage tuyo de tu segundo año consecutivo montandote al reno del parque, y ella me contestó el estado riéndose, diciéndome que le encantaba vernos divirtiendonos con nuestras locuras, y que esas fotos arriba del reno se repitiera siempre "Ojalá se repita siempre". Saber que a ella le hacia feliz vernos reír es uno de mis mayores consuelos hoy.
+
+Donde el pozol no necesita hielo.
+Otro bello recuerdo es cuando nos llevó a la graduación de una generación en la escuela en donde impartía clases, no recuerdo el nombre del lugar pero según recuerdo haber visto eso del pozol.
+Ella me invitó a ir para que conociera el lugar, y tu también estabas ahí estudiando porque te cambio de prepa, ese día conocí el camino y las grandes curvas que tomaban y te mareaban, estuvimos con tu mami, tu hermano y una que otra amiga tuya (como andrea, que le echo el ojo tu hermano jajaja), y durante la ceremonia la mencionaron como una muy buena maestra, y claro, a ti también por tener muy buenas calificaciones.
+El hecho que me haya considerado y llevado a ese lugar, me hizo sentir querido por ella, y eso es algo que siempre atesoraré.
+
+Juntos en la iglesia.
+No olvidar que también me llevó a la iglesia contigo, aunque fue más por ti, y pase casi todo el rato junto a ti. Pero ahí estuvimos, donde los hermanitos se preguntaban quien era yo, y ella me presentaba como tu buen amigo. Esto me hizo recordar que tu mamá era mujer de fe, y que su espiritualidad era una parte importante de su vida y que ahora mismo se esta gozando en la presencia de Dios.
+Y de regreso a tu casa, nos permitió irnos solos caminando, demostrando una vez más la confianza que tenía en mí.
+Me sentí honrado de ser parte de ese momento especial contigo y con ella.
+
+El flan más delicioso del mundo.
+Simplemente no puedo olvidar el flan que hacía tu mami. Cada vez que lo probaba, sentía que estaba saboreando un pedacito de cielo. Siempre que me decias que llegara a tu casa, y que tu mami me esperaba con flan, no sabes la alegría que sentía al saber que iba a disfrutar de ese manjar hecho con tanto amor.
+Espectacular, magico, inigualable... así era el flan de tu mami.
+
+Estos son solo algunos de los muchos recuerdos que guardo con cariño. Tu mami dejó una huella imborrable en mi vida, y estoy eternamente agradecido por haber tenido la oportunidad de conocerla y ser parte de su mundo.
+
+Se fue sabiendo que te quiero, que te respeto y que, aunque yo esté lejos estudiando, mi lealtad hacia su hija es inquebrantable.
+
+Gracias por todo, Lizbeth. Siempre te llevaré en mi corazón.
+Y gracias a ti, Kelly, por permitirme ser parte de tu vida y de la vida de tu mami.` 
+    },
     /*{
         id: 2,
         nombre: "Carta de Cumpleaños",
