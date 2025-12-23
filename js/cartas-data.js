@@ -16,6 +16,27 @@ Espero que te guste tanto como a mí me gustó crearlo para ti.
 Con todo mi cariño,
 Joseph.`
     },
+    {
+        id: 2,
+        nombre: "Un abrazo que me falto darte",
+        fecha: "2025-12-22",
+        diseño: "antiguo",
+        destinatario: "Kelly",
+        contenido: `Querida Kelly,
+
+He querido escribirte esto desde hace meses, pero a veces las palabras se atoran cuando el corazón pesa tanto.
+
+Sé que este año la vida nos puso a prueba de la forma más dura. Me dolió en el alma no poder estar físicamente ahí, sosteniendo tu mano, cuando tu mami partió al cielo. Sabes cuánto la quería y lo especial que ella fue conmigo; siempre confió en mí, incluso cuando éramos solo unos niños caminando sin rumbo.
+
+Aunque no pude estar a tu lado en esos momentos, quiero decirte que no hubo ni un solo día en que no pensara en ti y en el dolor que estabas pasando. Quería estar a tu lado y abrazarte fuerte. Me sentí impotente por no poder correr hasta Huixtla y darte ese abrazo que tanto anhelaba darte.
+
+No pude estar en ese instante, pero estare aquí para todo lo que viene. Para recordar su sonrisa, para honrar su confianza en nosotros y para seguir siendo ese amigo leal que ella tanto apreciaba.
+
+No importa cuánto cambien nuestros caminos o cuánto tiempo pase, siempre guardaré un lugar especial para ella en mi memoria, y un lugar inamovible para ti en mi vida.
+
+Con todo mi cariño y apoyo incondicional,
+El amigo Joseph, como me decía tu mami.`
+    },
     /*{
         id: 2,
         nombre: "Carta de Cumpleaños",
