@@ -79,6 +79,30 @@ Se fue sabiendo que te quiero, que te respeto y que, aunque yo esté lejos estud
 Gracias por todo, Lizbeth. Siempre te llevaré en mi corazón.
 Y gracias a ti, Kelly, por permitirme ser parte de tu vida y de la vida de tu mami.` 
     },
+    {
+        id: 4,
+        nombre: "¡Bienvenido 2026! ✨",
+        fecha: "2026-01-02",
+        diseño: "celebracion",
+        destinatario: "Kelly",
+        contenido: `¡Feliz Año Nuevo, Kaisei <3!
+
+Ya estamos en 2026 :D Sé que estás disfrutando del sol en Cancún (me hubieras llevado en la maletaaaa), pero no podía dejar pasar el primer día del año sin escribirte.
+
+Siendo muy sinceros, el 2025 fue un maestro estricto. Nos golpeó duro, nos quitó mucho y nos cambió para siempre. Pero aquí estamos: de pie. Tú, demostrando una fortaleza que admiro cada día más; y yo... bueno, yo intentando que la ingeniería no acabe conmigo (y luchando contra la "decadencia" física de la vida de estudiante, jajaja, ya sabes que el gym quedó en pausa, pero el cariño sigue fitness y fuerte 💪), pero este año me titulo, así que vamos con todooooo.
+
+Mi deseo para ti en este 2026 es simple pero profundo: Paz.
+Que las olas de Cancún se lleven todo lo que dolió del año viejo y te traigan de regreso una energía renovada. Te mereces un año lleno de sonrisas reales, de esas que hacen que se te cierren los ojitos.
+
+Aunque la vida nos tenga en ciudades distintas y en etapas diferentes, quiero que sepas que en mi calendario siempre hay tiempo para ti. Que este año sigamos sumando anécdotas, ya sea con cuernos de elfo puestos, en una llamada rápida o en una carta digital como esta (hay que ir por un frappe cuando regreses de cancuuun).
+
+Le doy gracias a Dios por ti, por tu mami que te cuida desde arriba, y por nuestra amistad que aguanta cualquier tormenta.
+
+¡A comerse el mundo este año!
+
+Con cariño,
+Tu inge favorito (y un poquito más rellenito de amor).`
+    },
     /*{
         id: 2,
         nombre: "Carta de Cumpleaños",
